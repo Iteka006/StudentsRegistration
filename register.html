@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-side {
+            flex: 1;
+            padding: 20px;
+            background-image: url('aucaaa.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #050505;
+        }
+
+        .right-side {
+            flex: 1;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+        }
+
+        .login-form {
+            padding: 20px;
+            text-align: center;
+        }
+
+       
+        .login-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        label {
+            text-align: left;
+            display: block;
+            margin-bottom: 5px;
+            color: black; 
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .right-side a {
+            text-decoration: none;
+            color: #007BFF;
+            margin-left: 0; 
+        }
+
+        .right-side a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            color: rgb(80, 90, 131); 
+        }
+        h2{
+           
+           color: rgba(56, 54, 163, 0.877); 
+       }
+    </style>
+</head>
+<script src="script.js"></script>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>
+                
+            </h2>
+        </div>
+        <div class="right-side">
+            <div class="login-form">
+                
+                <div class="login-logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <h2>Create your new Account</h2>
+                
+                <form action="your-login-action.php" method="POST" onsubmit="return validateForm();">
+                    <label for="id">ID</label>
+                    <input type="text" name="id" id="id" placeholder="ID" required>
+
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+
+                    <label for="faculty">Faculty</label>
+                    <input type="text" name="faculty" id="faculty" placeholder="Faculty" required>
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number" required>
+
+                    <label for="department">Department</label>
+                    <input type="text" name="department" id="department" placeholder="Department" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+
+                    <label for="retypepassword">Retype Password</label>
+                    <input type="password" name="retypepassword" id="retypepassword" placeholder="Retype Password" required>
+
+                    <button type="submit">Register</button>
+                </form>
+                
+                <p>Already have an account? <a href="index.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
