@@ -7,6 +7,7 @@ function validateForm() {
     var phonenumber = document.getElementById('phonenumber').value;
     var department = document.getElementById('department').value;
     var password = document.getElementById('password').value;
+    var nationality = document.getElementById('nationality').value;
     var retypepassword = document.getElementById('retypepassword').value;
 
     var idPattern = /^\d{5}$/;
@@ -19,7 +20,7 @@ function validateForm() {
 
     if (id.trim() === "" || firstname.trim() === "" || lastname.trim() === "" || faculty.trim() === "" ||
         phonenumber.trim() === "" || department.trim() === "" || password.trim() === "" ||
-        retypepassword.trim() === "") {
+        retypepassword.trim() === ""|| nationality.trim() === "") {
         alert("All fields must be filled out.");
         return false;
     }
