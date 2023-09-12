@@ -39,7 +39,9 @@ function validateForm() {
         alert("Invalid email address.");
         return false;
     }
-    
+
+    window.location.href = "welcomepage.html";
+    return false;
     
 }
 
@@ -47,7 +49,6 @@ function validateLoginForm() {
     var id = document.getElementById('email').value; 
     var password = document.getElementById('password').value;
 
-   
     var idPattern = /^\d{5}$/; // ID regex pattern
     var passwordPattern = /^.{8,16}$/; // Password regex pattern
 
@@ -71,6 +72,8 @@ function validateLoginForm() {
         return false;
     }
 
-    return true;
+    window.location.href = "welcomepage.html";
+
+    return false;
 }
 
